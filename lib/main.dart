@@ -28,14 +28,14 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(Icons.density_small_sharp, color: Colors.white),
+        leading: Icon(Icons.density_small_sharp, color: Colors.white, size: 26),
         title: Text(
           "Weather App",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(fontSize:24 , color: Colors.white),
         ),
         centerTitle: true,
         actions: [
-          Icon(Icons.add_box, color: Colors.white),
+          Icon(Icons.add_box, size: 28, color: Colors.white),
           SizedBox(width: 16),
         ],
       ),
@@ -56,29 +56,28 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 80),
               Text(
                 "Yogyakarta",
-                style: TextStyle(fontSize: 34, fontWeight: FontWeight.w500, color: Colors.white),
+                style: TextStyle(fontSize: 38, fontWeight: FontWeight.w400, color: Colors.white),
               ),
               SizedBox(height: 5),
               Text(
                 "Today",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300, color: Colors.white70),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w300, color: Colors.white70),
               ),
               SizedBox(height: 20),
               Text(
                 "28°C",
-                style: TextStyle(fontSize: 80, fontWeight: FontWeight.w600, color: Colors.white),
+                style: TextStyle(fontSize: 116, fontWeight: FontWeight.w300, color: Colors.white),
               ),
-              SizedBox(height: 10),
-              Divider(color: Colors.white70, thickness: 1, indent: 20, endIndent: 20),
-              SizedBox(height: 10),
-              Text("Sunny", style: TextStyle(fontSize: 18, color: Colors.white70)),
+              Divider(color: Colors.white70, thickness: 1, indent: 36, endIndent: 36),
+              SizedBox(height: 16),
+              Text("Sunny", style: TextStyle(fontSize: 20, color: Colors.white70)),
               SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.ac_unit, color: Colors.white, size: 22),
+                  Icon(Icons.ac_unit, color: Colors.white, size: 28),
                   SizedBox(width: 5),
-                  Text("5 km/h", style: TextStyle(fontSize: 17, color: Colors.white)),
+                  Text("5 km/h", style: TextStyle(fontSize: 24, color: Colors.white)),
                 ],
               ),
               SizedBox(height: 30),
@@ -93,7 +92,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     Text(
                       "Next 7 days",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                     SizedBox(height: 10),
                     Row(
@@ -123,16 +122,16 @@ class HomePage extends StatelessWidget {
   Widget weatherHourly(String time) {
     return Column(
       children: [
-        Text(time, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
-        SizedBox(height: 5),
-        Icon(Icons.ac_unit, color: Colors.white, size: 20),
-        Text("28°C", style: TextStyle(color: Colors.white)),
-        SizedBox(height: 5),
-        Icon(Icons.wind_power, color: Colors.white, size: 20),
-        Text("10 km/h", style: TextStyle(color: Colors.white)),
-        SizedBox(height: 5),
-        Icon(Icons.umbrella_sharp, color: Colors.white, size: 20),
-        Text("0%", style: TextStyle(color: Colors.white)),
+        Text(time, style: TextStyle(fontSize: 17, color: Colors.white)),
+        SizedBox(height: 7),
+        Icon(Icons.ac_unit, color: Colors.white, size: 28),
+        Text("28°C", style: TextStyle(fontSize: 17,color: Colors.white)),
+        SizedBox(height: 7),
+        Icon(Icons.wind_power, color: Colors.white, size: 28),
+        Text("10 km/h", style: TextStyle(fontSize: 17,color: Colors.white)),
+        SizedBox(height: 7),
+        Icon(Icons.umbrella_sharp, color: Colors.white, size: 28),
+        Text("0%", style: TextStyle(fontSize: 17,color: Colors.white)),
       ],
     );
   }
